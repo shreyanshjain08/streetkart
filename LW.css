@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+/* Navigation Bar Styles */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    padding: 15px 30px;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styles */
+.nav img {
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Text Styles */
+.nav .part2 h1,
+.nav .part2 h2 {
+    margin: 0;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 45px;
+    transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.nav .part2 h1:hover,
+.nav .part2 h2:hover {
+    letter-spacing: 2px;
+    color: crimson;
+}
+
+.nav .part2 h1 {
+    transform: translateX(50%);
+}
+
+.nav .part2 h2 {
+    transform: translateX(150%);
+}
+
+/* Navigation Menu Styles */
+.nav .part3 ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    font-size: 22px;
+}
+
+.nav .part3 ul a {
+    text-decoration: none;
+}
+
+
+.nav .part3 ul a li {
+    cursor: pointer;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav .part3 ul a li:hover {
+    color: crimson;
+    background-color: rgb(224, 235, 28);
+    /* Slightly lighter shade of orange */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Adding a box shadow effect */
+    transform: scale(1.05);
+    /* Slightly scaling up the element */
+}
+
+/* Subtle Overlay Effect */
+.nav .part3 ul a li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    /* Adding a subtle white overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav .part3 ul a li:hover::after {
+    opacity: 1;
+}
+
+
+
+/* Search Section */
+/* Container Styles */
+.second {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Header Styles */
+.search-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Header Hover Effects */
+.search-container h1:hover {
+    color: crimson;
+    transform: scale(1.05);
+}
+
+/* Search Box Styles */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 22px;
+    width: 550px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Input Field Hover & Focus Effects */
+.search-box input:hover {
+    border-color: #ffcc00;
+    transform: scale(1.02);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    transform: scale(1.02);
+}
+
+/* Button Styles */
+.search-box a button {
+    padding: 22px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover Effects */
+.search-box a button:hover {
+    background: linear-gradient(147deg, #FFCC00 0%, #FF6600 74%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+#A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+/* Image Container Styles */
+#A .third {
+    overflow: hidden;
+    border-radius: 15px;
+    /* Optional: adds rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#A .third:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+#A .third img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#A .third:hover img {
+    transform: scale(1.1);
+}
+
+
+.fourth {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.fourth div {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.fourth div:hover {
+    transform: scale(1.05);
+}
+
+.fourth img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.fourth div:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.fourth .name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.fourth div:hover .name {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#B {
+    text-align: center;
+    padding: 20px;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    border-radius: 5%;
+}
+
+#B h1 {
+    font-size: 37px;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#B h1:hover {
+    color: crimson;
+    transform: scale(1.05);
+}
+
+#B .fourth {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+#B .fourth div {
+    perspective: 1000px;
+}
+
+#B .fourth a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+}
+
+#B .fourth img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+}
+
+#B .fourth .name {
+    margin-top: 10px;
+    font-size: 16px;
+    transform: translateZ(20px);
+}
+
+#B .fourth a:hover {
+    transform: rotateY(10deg);
+}
+
+#B .fourth a:hover img {
+    transform: scale(1.1);
+}
+
+
+footer {
+    margin-top: 5px;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.foot {
+    max-width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.layers {
+    margin-right: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.layers-content {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    margin-top: 5%;
+}
+
+.layers-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.layers-content ul li {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.layers-content ul li.l1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.layers-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.layers-content ul li a:hover {
+    color: #f0c14b;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.icon li {
+    margin: 0 10px;
+}
+
+.icon li i {
+    color: #fff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon li i:hover {
+    color: #f0c14b;
+    transform: scale(1.2);
+}
+
+.video-section {
+    margin-top: 7px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 7%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.video-overlay p {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}

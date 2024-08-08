@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./stall.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/LW/templates/SignIn.css">
+    <title>Sign In Page</title>
+
+</head>
+<body>
+
+    <div id="A">
+        <a href="./LW.html">
+            <img src="./stall.jpg" alt="">
+        </a> 
+    </div>
+
+    <div class="signup-container">
+        <h1>Create Your Account</h1>
+        <form action=" " method="post">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]{12}" title="Please enter a 12-digit phone number" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" pattern=".{8,}" title="Password must be at least 8 characters long" required>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="login-link">
+            <p>Already have an account? <a href="./Login.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
